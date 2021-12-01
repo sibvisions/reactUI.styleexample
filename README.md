@@ -1,3 +1,5 @@
 # reactUI style example
 
-A simple demo application for custom styles.
+This is an example application for [reactUI](https://github.com/sibvisions/reactUI). It demonstrates application styling. 
+
+
