@@ -13,11 +13,25 @@ This example uses the reactUI as library to show the different possible styles.
 
 **In the newer Node version I had a problem where multiple `npm link` commands did not work. (node 16.x.x) for me 14.x.x worked fine**
 
-## Getting Started
+# Getting Started
 Import the "ReactUI" Component from the reactUI library, in your main file (e.g. App.tsx) render the component and pass properties as you wish.
 
-### Config.JSON
-If you don't enter the required properties in the URL, it is also possible to add a config.json file into your public directory (only works with devbundle):
+## Setting the Theme and Coloring Scheme
+Setting the theme and coloring scheme is possible in three ways. You can set it via URL parameters in your browser, as property of the ReactUI component in your code or if you have the development environmental variable, you can also set it in your config.json file.
+
+  **Available themes:** 
+  - basti
+  - basti_small
+  - basti_mobile 
+    
+  **Available color-schemes:** 
+  - default
+  - dark
+  - orange
+  - blue
+
+### 1. Config.JSON
+If you don't enter the required properties in the URL, it is also possible to add a config.json file into your public directory (only works with devbundle). This has the least priority:
 ```json
 {
     "appName": [application name here],
@@ -34,11 +48,23 @@ If you don't enter the required properties in the URL, it is also possible to ad
 }
 ```
 
+### 2. Setting via URL
+  
+  To set the theme and color-scheme by URL use the "theme" and "colorScheme" parameters. Setting by URL has mid-tier priority.
+
+  **Example URL:** 
+  
+  "http://localhost:3000/?language=en&appName=vxdemo&theme=basti&coloringScheme=dark&baseUrl=http%3A%2F%2Flocalhost%3A80%2Fservices%2Fmobile/#/home"
+
+### 3. Setting via Properties
+
+  Setting the theme and color-scheme by properties is done by passing the ReactUI properties theme and colorScheme. Setting the values as properties has the highest priority.
+
 ### Style specific Properties for the ReactUI Component
 Name | Type | Description
 --- | --- | --- |
-theme | string | The UI's theme. Will mainly change paddings (-> sizes) of components. Available themes: basti, basti_small, basti_mobile
-colorScheme | string | The UI's colors. Will change the front-end appearance of the web-app. Available color-schemes: default, dark, orange, blue
+theme | string | The UI's theme. Will mainly change paddings (-> sizes) of components
+colorScheme | string | The UI's colors. Will change the front-end appearance of the web-app
 
 ### Example
 ```typescript
@@ -49,3 +75,21 @@ colorScheme | string | The UI's colors. Will change the front-end appearance of 
       />
   );
 ```
+
+# Showcase
+In the following links there are screenshots which will showcase the already built-in themes and color-schemes which you can choose from.
+
+## 1. Themes
+There are three basic themes you can choose. Those will mainly change the padding or size of the components.
+
+  ### 1.1 basti
+  This is the default theme applications use when there is nothing set. [basti Theme](src/readme-files/basti)
+
+  ### 1.2 basti_small
+  This is the small theme when smaller menu-items and components are required. [basti_small Theme](src/readme-files/bast_small)
+
+  ### 1.3 basti_mobile
+  This is the mobile theme which generally has bigger boxes so you can tap menu-items more easily and the inputfields borders look different aswell. [basti_mobile Theme](src/readme-files/basti_mobile)
+
+
+
