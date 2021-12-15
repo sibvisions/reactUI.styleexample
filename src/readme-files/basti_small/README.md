@@ -1,4 +1,4 @@
-# Screenshots for basti_small Theme
+# Basti_small Theme Showcase
 This is the small theme of the reactUI. In the following screenshots, I have enabled hovering on some elements to show their size. Basically the paddings of the menu-items and other components are a lot smaller.
 
 ## Standard Menu Fullscreen

@@ -1,4 +1,4 @@
-# Screenshots for basti Theme
+# Basti Theme Showcase
 This is the default theme of the reactUI. In the following screenshots, I have enabled hovering on some elements to show their size.
 
 ## Standard Menu Fullscreen
