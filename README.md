@@ -83,13 +83,25 @@ In the following links there are screenshots which will showcase the already bui
 There are three basic themes you can choose. Those will mainly change the padding or size of the components.
 
   ### 1.1 basti
-  This is the default theme applications use when there is nothing set. [basti Theme](src/readme-files/basti)
+  This is the default theme applications use when there is nothing set. [Basti Theme](src/readme-files/basti)
 
   ### 1.2 basti_small
-  This is the small theme when smaller menu-items and components are required. [basti_small Theme](src/readme-files/bast_small)
+  This is the small theme when smaller menu-items and components are required. [Basti_small Theme](src/readme-files/bast_small)
 
   ### 1.3 basti_mobile
-  This is the mobile theme which generally has bigger boxes so you can tap menu-items more easily and the inputfields borders look different aswell. [basti_mobile Theme](src/readme-files/basti_mobile)
+  This is the mobile theme which generally has bigger boxes so you can tap menu-items more easily and the inputfields borders look different aswell. [Basti_mobile Theme](src/readme-files/basti_mobile)
 
+## 2. Color-Schemes
+There are four basic color-schemes available. Some color-schemes change more colors than others e.g. dark mode changes almost everything but orange not change as much.
 
+  ### 2.1 Default
+  This is the default color-scheme for applications. [Default Color-Scheme](src/readme-files/default)
 
+  ### 2.2 Dark
+  This color-scheme is a dark-mode if you want to rest your eyes. It features dark colors instead of bright ones. [Dark Color-Scheme](src/readme-files/dark)
+
+  ### 2.3 Orange
+  The orange color-scheme is a white-orange style for your application. [Orange Color-Scheme](src/readme-files/orange)
+
+  ### 2.4 Blue
+  The blue color-scheme is a white-blue style for your application. It is pretty similar to the default. [Blue Color-Scheme](src/readme-files/blue)
