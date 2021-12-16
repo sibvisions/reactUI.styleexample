@@ -5,7 +5,7 @@ This is the dark color scheme, it is the reactUI's dark-mode if you want to rest
 ![dark-login-mask](../readme-images/dark/dark-login-screen.png)
 
 ## Components Screen
-![dark-components-screen](../readme-images/dark/dark-components-screen.png)
+![dark-components-screen](../readme-images/dark/dark-component-screen.png)
 
 ## Contacts Screen
 ![dark-contacts-screen](../readme-images/dark/dark-contacts-screen.png)

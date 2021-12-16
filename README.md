@@ -105,3 +105,9 @@ There are four basic color-schemes available. Some color-schemes change more col
 
   ### 2.4 Blue
   The blue color-scheme is a white-blue style for your application. It is pretty similar to the default. [Blue Color-Scheme](src/readme-files/blue)
+
+  # Changing the Themes and Color-Schemes
+  Additionally to choosing a color-scheme or theme it is also possible to change the style we have set easily with either our pre-defined CSS-variables or just by your CSS-Statements. This can be done by changing the application.css file of your JVx application or in your react application.
+
+  ## Available CSS-Variables
+  To find a list of all pre-defined CSS-variables you are able to change, click [here](src/readme-files/css-variables).
