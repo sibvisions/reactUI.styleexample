@@ -110,7 +110,7 @@ There are four basic color-schemes available. Some color-schemes change more col
   Additionally to choosing a color-scheme or theme it is also possible to change the style we have set easily with either our pre-defined CSS-variables or just by your CSS-Statements. This can be done by changing the application.css file of your JVx application or in your react application.
 
   ## Example
-  As example for color-schemes I've added the default-scheme of the reactUI to this project. [Default-scheme](./default-scheme.scss)
+  As example for color-schemes I've added the default-scheme of the reactUI to this project. [Default-scheme](src/default-scheme.scss)
 
   ## Available CSS-Variables
   To find a list of all pre-defined CSS-variables you are able to change, click [here](src/readme-files/css-variables).
@@ -131,6 +131,6 @@ There are four basic color-schemes available. Some color-schemes change more col
   ## Add a CSS/SCSS File to your project
   Naturally you can also change the style by using your own CSS/SCSS files. Here you can also overwrite our CSS-variables or use your own selectors.
 
-  I've created another example color-scheme which is exclusive to this style-example. [Green-scheme.scss](./green-scheme.scss).
+  I've created another example color-scheme which is exclusive to this style-example. [Green-scheme.scss](src/green-scheme.scss).
 
   If you want to use the color-schemes provided by the reactUI, you have to comment the green-scheme import out or your selection will be overwritten!
