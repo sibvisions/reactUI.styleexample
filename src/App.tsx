@@ -1,8 +1,7 @@
 import React from 'react';
 import './App.css';
+import './green-scheme.scss';
 import { ReactUI } from 'reactUI'
-
-console.log(React.version)
 
 function App() {
   return (
