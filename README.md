@@ -83,54 +83,84 @@ In the following links there are screenshots which will showcase the already bui
 There are three basic themes you can choose. Those will mainly change the padding or size of the components.
 
   ### 1.1 basti
-  This is the default theme applications use when there is nothing set. [Basti Theme](src/readme-files/basti)
+  The [Basti Theme](src/readme-files/basti) is the default theme applications use when there is nothing set.
 
   ### 1.2 basti_small
-  This is the small theme when smaller menu-items and components are required. [Basti_small Theme](src/readme-files/basti_small)
+  The [Basti_small Theme](src/readme-files/basti_small) is the small theme when smaller menu-items and components are required.
 
   ### 1.3 basti_mobile
-  This is the mobile theme which generally has bigger boxes so you can tap menu-items more easily and the inputfields borders look different aswell. [Basti_mobile Theme](src/readme-files/basti_mobile)
+  The [Basti_mobile Theme](src/readme-files/basti_mobile) is the mobile theme which generally has bigger boxes so you can tap menu-items more easily and the inputfields borders look different aswell. 
 
 ## 2. Color-Schemes
 There are four basic color-schemes available. Some color-schemes change more colors than others e.g. dark mode changes almost everything but orange not change as much.
 
   ### 2.1 Default
-  This is the default color-scheme for applications. [Default Color-Scheme](src/readme-files/default)
+  The [Default Color-Scheme](src/readme-files/default) is the standatd color-scheme for applications when no color-scheme is set. 
 
   ### 2.2 Dark
-  This color-scheme is a dark-mode if you want to rest your eyes. It features dark colors instead of bright ones. [Dark Color-Scheme](src/readme-files/dark)
+  The [Dark Color-Scheme](src/readme-files/dark) is a dark-mode if you want to rest your eyes. It features dark colors instead of bright ones. 
 
   ### 2.3 Orange
-  The orange color-scheme is a white-orange style for your application. [Orange Color-Scheme](src/readme-files/orange)
+  The [Orange Color-Scheme](src/readme-files/orange) is a white-orange style for your application. 
 
   ### 2.4 Blue
-  The blue color-scheme is a white-blue style for your application. It is pretty similar to the default. [Blue Color-Scheme](src/readme-files/blue)
+  The [Blue Color-Scheme](src/readme-files/blue) is a white-blue style for your application. It is pretty similar to the default color-scheme. 
 
   # Changing the Themes and Color-Schemes
   Additionally to choosing a color-scheme or theme it is also possible to change the style we have set easily with either our pre-defined CSS-variables or just by your CSS-Statements. This can be done by changing the application.css file of your JVx application or in your react application.
 
-  ## Example
-  As example for color-schemes I've added the default-scheme of the reactUI to this project. [Default-scheme](src/default-scheme.scss)
+  ## 1. Themes
 
-  ## Available CSS-Variables
-  To find a list of all pre-defined CSS-variables you are able to change, click [here](src/readme-files/css-variables).
+  ### Example
+  As example/template file for themes I've added the [Basti-Theme](src/basti.scss) of the reactUI to this project.
 
-  ## Changing the Color-Scheme with application.css
+  ### Available CSS-Variables
+  To find a list of all pre-defined CSS-variables you are able to change for themes, click [here](src/readme-files/css-variables/themes)
+
+  ### Changing the Theme with application.css
   By changing the "application.css" file of the JVx-application it is also possible to change the styles of the reactUI client. You can either change the pre-defined CSS-variables mentioned earlier or via CSS selectors
 
   ```css
-:root {
-    --topbar-background: green;
-}
+  :root {
+    --button-padding: 1rem 1.5rem;
+  }
 
-.logo-background {
-  background-color: orange;
-}
-```
+  .p-inputtext {
+      padding: 5px 5px;
+  }
+  ```
 
-  ## Add a CSS/SCSS File to your project
+  ### Add a CSS/SCSS File to your project
   Naturally you can also change the style by using your own CSS/SCSS files. Here you can also overwrite our CSS-variables or use your own selectors.
 
-  I've created another example color-scheme which is exclusive to this style-example. [Green-scheme.scss](src/green-scheme.scss).
+  I've created an example theme, the [Basti_big.scss](src/basti_big.scss). which is exclusive to this style-example. It features a bigger topbar and bigger paddings for some components.
 
-  If you want to use the color-schemes provided by the reactUI, you have to comment the green-scheme import out or your selection will be overwritten!
+  If you want to use the themes provided by the reactUI, you have to comment the basti_big import out in App.tsx or your selection will be overwritten!
+
+  ## 2. Color-Schemes
+
+  ### Example
+  As example/template file for color-schemes I've added the [Default-scheme](src/default-scheme.scss) of the reactUI to this project.
+
+  ### Available CSS-Variables
+  To find a list of all pre-defined CSS-variables you are able to change for color-schemes, click [here](src/readme-files/css-variables/color-schemes).
+
+  ### Changing the Color-Scheme with application.css
+  By changing the "application.css" file of the JVx-application it is also possible to change the styles of the reactUI client. You can either change the pre-defined CSS-variables mentioned earlier or via CSS selectors
+
+  ```css
+  :root {
+    --topbar-background: green;
+  }
+
+  .logo-background {
+    background-color: orange;
+  }
+```
+
+  ### Add a CSS/SCSS File to your project
+  Naturally you can also change the style by using your own CSS/SCSS files. Here you can also overwrite our CSS-variables or use your own selectors.
+
+  I've created another example color-scheme, the [green-scheme.scss](src/green-scheme.scss). which is exclusive to this style-example. 
+
+  If you want to use the color-schemes provided by the reactUI, you have to comment the green-scheme import out in App.tsx or your selection will be overwritten!
