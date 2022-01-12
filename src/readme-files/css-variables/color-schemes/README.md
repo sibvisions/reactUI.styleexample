@@ -158,6 +158,7 @@ tab-selected-color | The border- and text-color of a selected Tab
 tab-hover-background | The background-color when hovering a Tab
 tab-border-color | The bottom-border color of an unselected Tab
 tab-close-color | The color of the closing 'x'
+tab-close-hover-color | The hover color of the closing 'x
 
 ## Tree Variables
 Variable | Description
