@@ -30,21 +30,21 @@ Setting the theme and coloring scheme is possible in three ways. You can set it 
   - orange
   - blue
 
-### 1. Config.JSON
+### 1. config.json
 If you don't enter the required properties in the URL, it is also possible to add a config.json file into your public directory (only works with devbundle). This has the least priority:
 ```json
 {
-    "appName": [application name here],
-    "baseUrl": [baseURL here],
-    "username": [username here],
-    "password": [password here],
-    "deviceMode": [deviceMode],
-    "language": [language (en, de)],
-    "logoBig": [path to logo in public directory],
-    "logoSmall": [path to logo in public directory],
-    "logoLogin": [path to logo in public directory],
-    "theme": [theme here],
-    "colorScheme": [color-scheme here]
+    "appName": "[application name here]",
+    "baseUrl": "[baseUrl here]",
+    "username": "[username here]",
+    "password": "[password here]",
+    "deviceMode": "[deviceMode]",
+    "langCode": "[language (en, de)]",
+    "logoBig": "[path to logo in public directory]",
+    "logoSmall": "[path to logo in public directory]",
+    "logoLogin": "[path to logo in public directory]",
+    "theme": "[theme here]",
+    "colorScheme": "[color-scheme here]"
 }
 ```
 
