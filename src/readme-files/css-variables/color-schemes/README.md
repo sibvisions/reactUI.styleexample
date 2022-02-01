@@ -80,6 +80,7 @@ Variable | Description
 --- | ---
 input-background | The background-color of an input field
 input-border | The border of an input field
+input-placeholder-color | The text-color of an input fields placeholder
 
 ## Checkbox Variables
 Variable | Description
