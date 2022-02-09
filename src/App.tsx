@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.css';
-import './green-scheme.scss';
-import'./basti_big.scss';
-import { ReactUI } from 'reactUI'
+//import './green-scheme.scss';
+//import'./basti_big.scss';
+import "reactUI/public/color-schemes/dark-scheme.css";
+import "reactUI/public/themes/basti.css";
+import "./themeABC.css"
+import { ReactUI } from 'reactUI';
 
 function App() {
   return (
-    <ReactUI colorScheme="orange" theme="basti_big" />
+    <ReactUI colorScheme="dark" theme="basti" />
   );
 }
 
