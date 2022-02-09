@@ -17,7 +17,7 @@ This example uses the reactUI as library to show the different possible styles.
 Import the "ReactUI" Component from the reactUI library, in your main file (e.g. App.tsx) render the component and pass properties as you wish.
 
 ## Setting the Theme and Coloring Scheme
-Setting the theme and coloring scheme is possible in three ways. You can set it via URL parameters in your browser, as property of the ReactUI component in your code or if you have the development environmental variable, you can also set it in your config.json file.
+Setting the theme and coloring scheme is possible by importing the css into your project.
 
   **Available themes:** 
   - basti
@@ -30,50 +30,12 @@ Setting the theme and coloring scheme is possible in three ways. You can set it 
   - orange
   - blue
 
-### 1. config.json
-If you don't enter the required properties in the URL, it is also possible to add a config.json file into your public directory (only works with devbundle). This has the least priority:
-```json
-{
-    "appName": "[application name here]",
-    "baseUrl": "[baseUrl here]",
-    "username": "[username here]",
-    "password": "[password here]",
-    "deviceMode": "[deviceMode]",
-    "langCode": "[language (en, de)]",
-    "logoBig": "[path to logo in public directory]",
-    "logoSmall": "[path to logo in public directory]",
-    "logoLogin": "[path to logo in public directory]",
-    "theme": "[theme here]",
-    "colorScheme": "[color-scheme here]"
-}
-```
 
-### 2. Setting via URL
-  
-  To set the theme and color-scheme by URL use the "theme" and "colorScheme" parameters. Setting by URL has mid-tier priority.
-
-  **Example URL:** 
-  
-  "http://localhost:3000/?language=en&appName=vxdemo&theme=basti&coloringScheme=dark&baseUrl=http%3A%2F%2Flocalhost%3A80%2Fservices%2Fmobile/#/home"
-
-### 3. Setting via Properties
-
-  Setting the theme and color-scheme by properties is done by passing the ReactUI properties theme and colorScheme. Setting the values as properties has the highest priority.
-
-### Style specific Properties for the ReactUI Component
-Name | Type | Description
---- | --- | --- |
-theme | string | The UI's theme. Will mainly change paddings (-> sizes) of components
-colorScheme | string | The UI's colors. Will change the front-end appearance of the web-app
 
 ### Example
 ```typescript
-  return (
-    <ReactUI 
-        theme="basti"
-        colorScheme="dark"
-      />
-  );
+import "reactUI/public/color-schemes/dark-scheme.css"
+import "reactUI/public/themes/basti.css"
 ```
 
 # Showcase
