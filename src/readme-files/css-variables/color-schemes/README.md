@@ -63,10 +63,10 @@ corp-menu-speeddial-background | The background-color of the corporation-menu sp
 corp-menu-speeddial-color | The text-color of the corporation-menu speeddial
 corp-menu-speeddial-shadow | The shadow of the corporation-menu speeddial
 
-## Button Variables
+## Primary-Color Variable
 Variable | Description
 --- | ---
-button-background | The background-color for buttons
+primary-color | The primary-color of the app, mainly used for buttons.
 
 ## Popupmenubutton Variables
 Variable | Description

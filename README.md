@@ -1,4 +1,4 @@
-# reactUI style example
+# ReactUI style example
 
 This is an example application for [reactUI](https://github.com/sibvisions/reactUI). It showcases the built-in reactUI themes and coloring schemes and how a developer is able to insert their own or edit the current modes.
 
@@ -13,11 +13,14 @@ This example uses the reactUI as library to show the different possible styles.
 
 **In the newer Node version I had a problem where multiple `npm link` commands did not work. (node 16.x.x) for me 14.x.x worked fine**
 
+# Style Hirarchy
+[Here is some information](./src//readme-files//style-hirarchy/README.md) which will show you how the style hirarchy is set in ReactUI.
+
 # Getting Started
 Import the "ReactUI" Component from the reactUI library, in your main file (e.g. App.tsx) render the component and pass properties as you wish.
 
 ## Setting the Theme and Coloring Scheme
-Setting the theme and coloring scheme is possible by importing the css into your project.
+Setting the theme, coloring scheme and design is possible by either importing the css from the library into your project or by creating your own theme scss (which needs to be converted into css) or css file and putting it into the public folder.
 
   **Available themes:** 
   - basti
@@ -30,13 +33,25 @@ Setting the theme and coloring scheme is possible by importing the css into your
   - orange
   - blue
 
-
+### Setting by Importing
 
 ### Example
 ```typescript
 import "reactUI/public/color-schemes/dark-scheme.css"
 import "reactUI/public/themes/basti.css"
 ```
+
+### Setting by Creating own Files
+
+First create your own theme/color-scheme/design which is described later on. Then put it in your public folder, it is important to put it into a "themes" respectively "color-schemes" or "design" folder. Also the color-schemes files have to be named like "xxx-scheme.css".
+
+If you want to replace the default theme and color-scheme pass the colorScheme and theme property and the name of your file(s) as value.
+
+```typescript
+<ReactUI colorScheme="custom-scheme" theme="custom-theme" design="design-file" />
+```
+
+If you want to add the css files to the head extra. Use the API functions `addCSSToHeadAfter` and `addCSSToHeadBefore` depending on whether you want your files to overwrite the existing css or not. These funtions need the path to the file as parameter.
 
 # Showcase
 In the following links there are screenshots which will showcase the already built-in themes and color-schemes which you can choose from.
