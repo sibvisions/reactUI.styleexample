@@ -71,3 +71,6 @@ Add the css file to your project and then import it to your project. Preferably 
 
 ### 5.2. Using the Public Folder
 Add a "design" folder to your public folder and add the css file to the folder. Then either add the "design" property to the ReactUI or use the "design" URL parameter and add the file name.
+
+Example URL:
+http://localhost:3000/?language=de&appName=vxdemo&colorScheme=dark&theme=basti&design=themeABC&baseUrl=http%3A%2F%2Flocalhost%3A80%2Fservices%2Fmobile/#
