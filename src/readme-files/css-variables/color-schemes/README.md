@@ -154,7 +154,7 @@ dialog-content-background | The background-color of a dialogs content
 Variable | Description
 --- | ---
 tab-navbar-background | The background-color of the Tabset navigation-bar
-tab-navbar-border | The border of the Tabset navigation-bar
+tab-navbar-border-color | The border-color of the Tabset navigation-bar
 tab-selected-color | The border- and text-color of a selected Tab
 tab-hover-background | The background-color when hovering a Tab
 tab-border-color | The bottom-border color of an unselected Tab
