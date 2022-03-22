@@ -110,6 +110,7 @@ Variable | Description
 --- | ---
 --toolbar-background | The background-color of a toolbar
 --toolbar-border-color | The border color of a toolbar
+--toolbar-separator-color | The color of the separator between toolbars
 
 ## Table Variables
 Variable | Description
