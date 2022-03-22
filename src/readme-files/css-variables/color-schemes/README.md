@@ -14,6 +14,11 @@ login-logo-background | The login masks logo part background-color
 login-placeholder-color | The text-color of the login inputfield's placeholder
 login-shadow | The shadow of the login mask
 
+## Text Variable
+Variable | Description
+--- | ---
+text-color | The main text-color
+
 ## Screen Variable
 Variable | Description
 --- | ---
