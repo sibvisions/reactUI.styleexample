@@ -142,7 +142,6 @@ linked-item-hover-text-color | The text-color of an item when hovering it
 Variable | Description
 --- | ---
 date-panel-background | The background-color of the DatePicker
-date-header-background | The background-color of the header (year/month picker)
 date-panel-header-border | The border which separates the year/month picker from the day picker
 date-panel-hover-color | The text-color of a day when hovering over it
 date-selected-background | The background-color of a selected day
@@ -240,3 +239,54 @@ table-border-radius | The border-radius for tables
 tab-border-radius | The border-radius for the Tabset navbar
 dialog-border-radius | The border-radius for Dialogs/Popups
 toolbar-border-radius | The border-radius for toolbars
+
+## Loading Topbar Variables
+Variable | Description
+--- | ---
+--topbar-colors | two color values which are displayed by topbar which is shown when the client is communicating with the server
+
+## System Color Variables (is only set when systemcolor is set on an comp background in VisionX)
+Variable | Description
+--- | ---
+--mandatory-background | The background color of mandatory fields
+--readonly-background | The background color of readonly fields
+--invalid-background | The background color of invalid fields
+
+## Gone Variable
+Variable | Description
+--- | ---
+--gone-background | Error dialog background when the application receives gone status
+
+## V2 Variables
+
+## Launcher Variables
+Variable | Description
+--- | ---
+--launcher-toolbar-background | The launchers toolbar background color
+--launcher-toolbar-separator-color | The launchers toolbar separator color
+--launcher-toolbar-button-text-color | The launchers toolbar buttons text-color
+--launcher-toolbar-button-hover-background | The launchers toolbar buttons background color when hovering
+--launcher-toolbar-button-hover-text-color | The launchers toolbar buttons text color when hovering
+
+## Frame Variables
+Variable | Description
+--- | ---
+--frame-menubar-background | The frames menubar background color
+--frame-menubar-hover-background | The frames menubar hover background color
+--frame-menubar-text-color | The frames menubar text-color
+--frame-menubar-submenu-background | The frames menubar submenu background color
+--frame-menubar-item-hover-background | The frames menubar sub-items hover background color
+--frame-menubar-item-hover-text-color | The frames menubar sub-items hover text-color
+--frame-toolbar-background | The background color of the frames toolbar
+--frame-toolbar-separator-color | The separator color of frames toolbars
+--frame-toolbar-button-text-color | The text-color of buttons of the frames toolbar
+--frame-toolbar-button-hover-background | The background color when hovering toolbar buttons in the frame
+--frame-toolbar-button-hover-text-color | The text-color when hovering toolbar buttons in the frame
+--frame-header-background | The background color for frame headers
+--frame-header-color | The text-color for frame headers
+--frame-header-border | The border for frame headers
+--frame-header-button-hover-background | The hover background color of the frame close button
+--frame-header-button-hover-color | The hover text color of the frame close button
+--frame-border-radius | Border radius of the frame
+--frame-shadow | Box shadow of the frame
+--frame-border-width | The frames border-width on the sides
