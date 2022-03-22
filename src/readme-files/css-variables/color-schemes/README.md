@@ -53,12 +53,12 @@ std-menu-fadeout-background | The background of a div which makes it seem like t
 ## Corporation-Menu Variables
 Variable | Description
 --- | ---
-corp-menu-background | The background-color of the corporation-menu's menubar
-corp-menu-hover-background | The hover background-color of the corporation-menu's menubar
-corp-menu-text-color | The text-color of the corporation-menu's menubar
-corp-menu-submenu-background | The background-color of the submenu (clicking corporation-menu)
-corp-menu-item-hover-background | The hover background-color when a menuitem is hovered
-corp-menu-item-hover-text-color | The hover text-color when a menuitem is hovered
+menubar-background | The background-color of the corporation-menu's menubar
+menubar-hover-background | The hover background-color of the corporation-menu's menubar
+menubar-text-color | The text-color of the corporation-menu's menubar
+menubar-submenu-background | The background-color of the submenu (clicking corporation-menu)
+menubar-item-hover-background | The hover background-color when a menuitem is hovered
+menubar-item-hover-text-color | The hover text-color when a menuitem is hovered
 corp-menu-speeddial-background | The background-color of the corporation-menu speeddial
 corp-menu-speeddial-color | The text-color of the corporation-menu speeddial
 corp-menu-speeddial-shadow | The shadow of the corporation-menu speeddial
