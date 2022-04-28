@@ -40,6 +40,7 @@ std-fadeout-width | The width of the fadeout div (a div which makes menu-item te
 std-fadeout-left | The left value of the absolute positioned fadeout-div
 std-menu-header-padding | The padding of a standard-menu's header item (defines the gap between header items)
 std-menu-item-padding | The padding of a standard-menu's menu-item (defines the gap between header items)
+menuicon-size | The size of the menuicon (also for corporation menu)
 
 ## Corporation-Menu Variables
 Variable | Description
