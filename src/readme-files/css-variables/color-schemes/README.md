@@ -108,9 +108,9 @@ radiobutton-inner-color | The inner color of a selected radiobutton
 ## Toolbar Variables
 Variable | Description
 --- | ---
---toolbar-background | The background-color of a toolbar
---toolbar-border-color | The border color of a toolbar
---toolbar-separator-color | The color of the separator between toolbars
+toolbar-background | The background-color of a toolbar
+toolbar-border-color | The border color of a toolbar
+toolbar-separator-color | The color of the separator between toolbars
 
 ## Table Variables
 Variable | Description
@@ -202,7 +202,7 @@ message-question-header-color | The header text-color question messages
 ## Error-Dialog Variable
 Variable | Description
 --- | ---
-error-dialog-background | The background-color of the error-dialog
+error-bar-background | The background-color of the error-dialog
 
 ## Loading-Screen Variables
 Variable | Description
