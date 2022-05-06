@@ -79,3 +79,4 @@ label-padding | The top and bottom padding for labels
 error-dialog-details-gap  | The top-margin of the error-dialog details
 error-dialog-textarea-width | The width of the error-dialog textarea
 error-dialog-textarea-height | The height of the error-dialog textarea
+error-dialog-icon-size | The font-size of the error-dialog icon
