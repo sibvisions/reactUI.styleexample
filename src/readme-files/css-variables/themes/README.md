@@ -76,3 +76,6 @@ tab-padding | The padding of Tabs in the Tabset-Navbar
 table-header-padding | The padding of table-header-columns
 table-data-height | The height of table data (not the height of row, height of row will be data-height + ~8px)
 label-padding | The top and bottom padding for labels
+error-dialog-details-gap  | The top-margin of the error-dialog details
+error-dialog-textarea-width | The width of the error-dialog textarea
+error-dialog-textarea-height | The height of the error-dialog textarea
