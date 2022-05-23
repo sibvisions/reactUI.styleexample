@@ -74,10 +74,10 @@ checkbox-size | The size of the Checkbox component
 radiobutton-size | The size of the Radiobutton component
 tab-padding | The padding of Tabs in the Tabset-Navbar
 table-header-padding | The padding of table-header-columns
+table-cell-padding | The padding of table-cells
 table-data-height | The height of table data (not the height of row, height of row will be data-height + ~8px)
 label-padding | The top and bottom padding for labels
 dialog-header-padding | The padding of a dialogs header
 error-dialog-details-gap  | The top-margin of the error-dialog details
-error-dialog-textarea-width | The width of the error-dialog textarea
 error-dialog-textarea-height | The height of the error-dialog textarea
 error-dialog-icon-size | The font-size of the error-dialog icon
