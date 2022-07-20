@@ -32,6 +32,7 @@ topbar-text-color | The text-color of the topbar (also includes menubars)
 topbar-logo-background | The background-color of the logo of the topbar
 topbar-button-background | The background-color for the buttons of the topbar
 topbar-button-hover-background | The hover background-color for the buttons of the topbar
+topbar-button-text-color | The foreground-color for buttons of the topbar
 
 ## Profile-Menu Variables
 Variable | Description
