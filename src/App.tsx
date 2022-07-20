@@ -4,7 +4,7 @@ import './App.css';
 //import'./basti_big.scss';
 import "reactUI/public/color-schemes/dark-scheme.css";
 import "reactUI/public/themes/basti.css";
-//import "./themeABC.css"
+import "./themeXYZ.css"
 import { ReactUI, useAPI } from 'reactUI';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
   },[])
 
   return (
-    <ReactUI colorScheme="dark" theme="basti" design="themeABC" />
+    <ReactUI colorScheme="dark" theme="basti" />
   );
 }
 

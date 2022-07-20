@@ -1,3 +1,20 @@
+/* Copyright 2022 SIB Visions GmbH
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License"); you may not
+ * use this file except in compliance with the License. You may obtain a copy of
+ * the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
+ * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
+ * License for the specific language governing permissions and limitations under
+ * the License.
+ */
+
+@import '../scssutil/scrollbar.scss';
+
 /// Default Scheme
 :root {
     /// Default login background
@@ -5,9 +22,6 @@
 
     /// Default login background
     --login-logo-background: #ffffff;
-
-    /// Default login inputfields placeholder color
-    --login-placeholder-color: #bcc0c4;
 
     /// Default login box-shadow
     --login-shadow: 5px 5px 45px 5px rgba(0,0,0,0.6);
@@ -33,17 +47,19 @@
     /// Default topbar buttons hover background
     --topbar-button-hover-background: #454b52;
 
+    --topbar-button-text-color: var(--topbar-text-color);
+
     /// profile-menu background
-    --profile-background: #7a7f85;
+    --profile-background: var(--topbar-background);
 
     /// profile-menu hover background-color
-    --profile-hover-background: #454b52;
+    --profile-hover-background: var(--topbar-button-hover-background);
 
     /// profile-menu text-color
-    --profile-text-color: #ffffff;
+    --profile-text-color: var(--topbar-text-color);
 
-    /// profile-menu seperator
-    --profile-seperator: 2px solid #5b6067;
+    /// profile-menu separator
+    --profile-separator: 2px solid #5b6067;
 
     /// profile-menu submenu background
     --profile-submenu-background: #ffffff;
@@ -75,23 +91,23 @@
     /// Default fadeout background
     --std-menu-fadeout-background: linear-gradient(90deg, #fafafa00 0%, #fafafa 100%);
 
-    /// corporation menubar background
-    --corp-menu-background: #7a7f85;
+    /// menubar background
+    --menubar-background: var(--topbar-background);
 
-    /// corporation menubar hover background
-    --corp-menu-hover-background: #454b52;
+    /// menubar hover background
+    --menubar-hover-background: var(--topbar-button-hover-background);
 
-    /// corporation menubar text-color
-    --corp-menu-text-color: #ffffff;
+    /// menubar text-color
+    --menubar-text-color: var(--topbar-text-color);
 
-    /// corporation menubar submenu background
-    --corp-menu-submenu-background: #ffffff;
+    /// menubar submenu background
+    --menubar-submenu-background: #ffffff;
 
-    /// corporation items hover background
-    --corp-menu-item-hover-background: #e9ecef;
+    /// menubar items hover background
+    --menubar-item-hover-background: #e9ecef;
 
-    /// corporation items hover text-color
-    --corp-menu-item-hover-text-color: #000000;
+    /// menubar items hover text-color
+    --menubar-item-hover-text-color: #000000;
 
     /// Default background for corporation menu speeddial
     --corp-menu-speeddial-background: #ffffff;
@@ -103,13 +119,16 @@
     --corp-menu-speeddial-shadow:0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.20);
 
     /// Default button color
-    --button-background: #2196F3;
+    --primary-color: #2196F3;
 
     /// Default component background
     --input-background: #ffffff;
 
     /// Default component border
     --input-border: 1px solid #ced4da;
+
+    /// Default input placeholder color;
+    --input-placeholder-color: #6c757d;
 
     /// checkbox unselected background
     --checkbox-background: #ffffff;
@@ -146,6 +165,8 @@
 
     /// Default toolbar border
     --toolbar-border-color: #dee2e6;
+
+    --toolbar-separator-color: #bbbbbb;
 
     /// Default table-header background
     --table-header-background: #ffffff;
@@ -241,7 +262,7 @@
     --tab-navbar-background: #ffffff;
 
     /// Default TabSet navbar border
-    --tab-navbar-border: 1px solid #dee2e6;
+    --tab-navbar-border-color: #dee2e6;
 
     /// Default border and color of a selected tab
     --tab-selected-color: #2196fe;
@@ -264,6 +285,8 @@
     /// Default Tree selected item background
     --tree-selected-item-background: #E3F2FD;
 
+    --tree-even-background: var(--table-row-odd-background);
+
     /// Default HTMLEditor toolbar background
     --html-toolbar-background: #f8f9fa;
 
@@ -280,7 +303,7 @@
     --html-picker-item-hover-background: #e9ecef;
 
     /// Default Message info background
-    --message-info-header-background: var(--button-background);
+    --message-info-header-background: var(--primary-color);
 
     /// Default Message info hover background of closing element
     --message-info-header-close-hover: #276b96;
@@ -298,10 +321,10 @@
     --message-warning-header-color: #ffffff;
 
     /// Default Message error background
-    --message-error-header-background: #ff364a;
+    --message-error-header-background: #CC0C39;
 
     /// Default Message error hover background of closing element
-    --message-error-header-close-hover: #db2739;
+    --message-error-header-close-hover: #a92230;
 
     /// Default Message error header text color
     --message-error-header-color: #ffffff;
@@ -315,8 +338,8 @@
     /// Default Message question header text color
     --message-question-header-color: #ffffff;
 
-    /// Default error-dialog background
-    --error-dialog-background: rgba(255, 255, 255, 0.8);
+    /// Default error-bar background
+    --error-bar-background: rgba(255, 255, 255, 0.8);
 
     /// Default loading-screen background left
     --loading-screen-left-background: #ffffff;
@@ -335,6 +358,9 @@
 
     /// Default tab close button color
     --tab-close-color: #cdcfd1;
+
+    /// Default tab close button hover color
+    --tab-close-hover-color: #6f757a;
 
     /// Default focus border/shadow
     --focus-box-shadow: 0 0 0 0.2rem #8dcdff;
@@ -364,13 +390,102 @@
     --tab-border-radius: 0px;
 
     /// Default border-radius for Dialogs
-    --dialog-border-radius: 0px;
+    --dialog-border-radius: 3px;
 
     /// Default border-radius for toolbars which are NOT part of navigation-tables
     --toolbar-border-radius: 0px;
 
     /// Default Topbar color
     --topbar-colors: #2196F3, #2196F3;
+
+    ///System Colors
+
+    /// Default mandatory background
+    --mandatory-background: rgb(255, 244, 210);
+
+    /// Default read-only background
+    --readonly-background: rgb(239, 239, 239);
+
+    /// Default invalid editor background
+    --invalid-background: rgb(209, 51, 51);
+
+    --gone-background: #ffcf40bb;
+
+    --signature-pad-background: var(--screen-background);
+
+    /// V2 Variables
+
+    /// The background color of the launcher toolbar
+    --launcher-toolbar-background: var(--topbar-background);
+
+    /// The separator color of launcher toolbars
+    --launcher-toolbar-separator-color: #f8f9fa;
+
+    /// The text-color of buttons of the launcher
+    --launcher-toolbar-button-text-color: var(--topbar-text-color);
+
+    /// The background color when hovering toolbar buttons of the launcher
+    --launcher-toolbar-button-hover-background: var(--topbar-button-hover-background);
+
+    /// The text-color when hovering toolbar buttons of the launcher
+    --launcher-toolbar-button-hover-text-color: var(--topbar-text-color);
+
+    /// frame menubar background
+    --frame-menubar-background: var(--topbar-background);
+
+    /// frame menubar hover background
+    --frame-menubar-hover-background: var(--topbar-button-hover-background);
+
+    /// frame menubar text-color
+    --frame-menubar-text-color: var(--topbar-text-color);
+
+    /// frame menubar submenu background
+    --frame-menubar-submenu-background: #ffffff;
+
+    /// frame menubar items hover background
+    --frame-menubar-item-hover-background: #e9ecef;
+
+    /// frame menubar items hover text-color
+    --frame-menubar-item-hover-text-color: #000000;
+
+    /// The background color of the frame toolbar
+    --frame-toolbar-background: var(--topbar-background);
+
+    /// The separator color of frame toolbars
+    --frame-toolbar-separator-color: #f8f9fa;
+
+    /// The text-color of buttons of the frame
+    --frame-toolbar-button-text-color: var(--topbar-text-color);
+
+    /// The background color when hovering toolbar buttons of the frame
+    --frame-toolbar-button-hover-background: var(--topbar-button-hover-background);
+
+    /// The text-color when hovering toolbar buttons of the frame
+    --frame-toolbar-button-hover-text-color: var(--topbar-text-color);
+
+    /// The background color for frame headers
+    --frame-header-background: #dddcdf;
+
+    /// The text-color for frame headers
+    --frame-header-color: #6c6c6c;
+
+    /// The border for frame headers
+    --frame-header-border: 1px solid #b1b1b1;
+
+    /// The hover background color of the frame close button
+    --frame-header-button-hover-background: #fafafa;
+
+    /// The hover text color of the frame close button
+    --frame-header-button-hover-color: #1e1f20;
+
+    /// Border radius of the frame
+    --frame-border-radius: 9px;
+
+    /// Box shadow of the frame
+    --frame-shadow: 0 22px 70px 4px rgb(0 0 0 / 56%);
+
+    /// Frame border-width on the sides
+    --frame-border-width: 4px;
 }
 
 body {
@@ -382,10 +497,6 @@ body {
 .login-form {
     background: var(--login-mask-background);
     border-radius: var(--login-border-radius);
-
-    .p-float-label label {
-        color: var(--login-placeholder-color);
-    }
 }
 
 .login-logo-wrapper {
@@ -404,7 +515,7 @@ body {
 
 .p-button.p-button-icon-only.menu-topbar-buttons {
     background: var(--topbar-button-background);
-    color: var(--topbar-text-color);
+    color: var(--topbar-button-text-color);
     border-radius: var(--button-border-radius);
 
     &:hover {
@@ -418,8 +529,6 @@ body {
 
 /// *----------Profile-Menu----------*
 .profile-menu {
-    border-left: var(--profile-seperator);
-
     .p-menubar {
         background: var(--profile-background);
 
@@ -466,6 +575,10 @@ body {
     }
 }
 
+.vl {
+    border-left: var(--profile-separator);
+}
+
 /// *----------Standard-Menu----------*
 .menu-logo-wrapper {
     background: var(--topbar-logo-background);
@@ -474,12 +587,13 @@ body {
 
 .menu-panelmenu-wrapper {
     background: var(--std-menu-background);
+    @include styledScrollbarPanelDefault();
     border-right: var(--std-menu-border);
 }
 
 .p-panelmenu {
     .p-panelmenu-header {
-        .p-panelmenu-header-link {
+        > a {
             background: var(--std-menu-background);
             border-color: var(--std-menu-background);
             color: var(--std-menu-text-color);
@@ -503,13 +617,13 @@ body {
         background: var(--std-menu-background);
 
         .p-menuitem {
-            .p-menuitem-link:not(.p-disabled) {
+            .p-menuitem-link {
                 background: var(--std-menu-background);
                 .p-menuitem-icon, .p-menuitem-text {
                     color: var(--std-menu-text-color);
                 }
 
-                &:hover {
+                &:not(.p-disabled):hover {
                     background: var(--std-menu-item-hover-background);
                     .p-menuitem-icon, .p-menuitem-text {
                         color: var(--std-menu-item-hover-text-color);
@@ -533,11 +647,11 @@ body {
 }
 
 /// *----------Corporate-Menu----------*
-.c-menu-header {
+.corp-menu-header {
     background: var(--topbar-background);
 }
 
-.c-menu-menubar {
+.corp-menu-menubar {
     background: var(--topbar-background);
 }
 
@@ -549,42 +663,42 @@ body {
 }
 
 .p-menubar {
-    background: var(--corp-menu-background);
+    background: var(--menubar-background);
     
     .p-menubar-root-list {
         >.p-menuitem, >.p-menuitem.p-menuitem-active  {
             > .p-menuitem-link:not(.p-disabled) {
-                background: var(--corp-menu-background);
-                color: var(--corp-menu-text-color);
+                background: var(--menubar-background);
+                color: var(--menubar-text-color);
 
                 .p-menuitem-text, .p-submenu-icon {
-                    color: var(--corp-menu-text-color);
+                    color: var(--menubar-text-color);
                 }
 
                 &:hover {
-                    background: var(--corp-menu-hover-background);
-                    color: var(--corp-menu-text-color);
+                    background: var(--menubar-hover-background);
+                    color: var(--menubar-text-color);
                     .p-menuitem-text, .p-submenu-icon {
-                        color: var(--corp-menu-text-color);
+                        color: var(--menubar-text-color);
                     }
                 }
             }
 
             > .p-submenu-list {
-                background: var(--corp-menu-submenu-background);
+                background: var(--menubar-submenu-background);
 
                 .p-menuitem .p-menuitem-link {
-                    background: var(--corp-menu-submenu-background);
+                    background: var(--menubar-submenu-background);
 
                     .p-menuitem-text, .p-menuitem-icon {
                         color: var(--text-color);
                     }
 
                     &:hover {
-                        background: var(--corp-menu-item-hover-background);
+                        background: var(--menubar-item-hover-background);
 
                         .p-menuitem-text, .p-menuitem-icon {
-                            color: var(--corp-menu-item-hover-text-color);
+                            color: var(--menubar-item-hover-text-color);
                         }
                     }
                 }
@@ -598,8 +712,8 @@ body {
 .reactUI.basti_mobile {
     .p-inputtext:enabled:focus {
         & + .p-autocomplete-dropdown, & + .p-datepicker-trigger {
-            border-color: var(--button-background);
-            color: var(--button-background);
+            border-color: var(--primary-color);
+            color: var(--primary-color);
         }
     }
 
@@ -607,13 +721,13 @@ body {
         &:hover {
             .p-button.p-button-icon-only {
                 &.p-autocomplete-dropdown, &.p-datepicker-trigger {
-                    border-color: var(--button-background);
-                    color: var(--button-background);
+                    border-color: var(--primary-color);
+                    color: var(--primary-color);
                 }
             }
 
             .p-inputtext {
-                border-color: var(--button-background);
+                border-color: var(--primary-color);
             }
         }
 
@@ -645,7 +759,7 @@ body {
 }
 
 /// Checkbox & Radiobutton
-.p-checkbox .p-checkbox-box:not(.p-highlight), .p-radiobutton .p-radiobutton-box:not(.p-highlight) {
+.p-checkbox .p-checkbox-box, .p-radiobutton .p-radiobutton-box {
     background: var(--input-background);
     border: var(--input-border);
 }
@@ -711,8 +825,8 @@ body {
 
 /// PopupMenuButton
 .rc-popupmenubutton {
-    background: var(--button-background);
-    border-color: var(--button-background);
+    background: var(--primary-color);
+    border-color: var(--primary-color);
     border-radius: var(--button-border-radius);
 
     &:focus-within {
@@ -725,11 +839,17 @@ body {
         background: var(--popupmenubutton-panel-background);
     }
 
-    .p-menuitem-link:not(.p-disabled):hover {
-        background: var(--popupmenubutton-item-hover-background);
-        
-        .p-menuitem-text {
-            color: var(--popupmenubutton-item-hover-text-color);
+    .p-menuitem-link {
+        &:not(.p-disabled):hover {
+            background: var(--popupmenubutton-item-hover-background);
+            
+            .p-menuitem-text {
+                color: var(--popupmenubutton-item-hover-text-color);
+            }
+        }
+
+        .p-menuitem-text{
+            color: var(--text-color);
         }
     }
 
@@ -768,11 +888,15 @@ body {
             border-color: var(--border-color-hover);
         }
     }
+
+    &::placeholder {
+        color: var(--input-placeholder-color);
+    }
 }
 
-// .readonly-standard-background.p-inputtext, .readonly-standard-background .p-inputtext {
-//     background-color: var(--input-background) !important;
-// }
+.p-float-label > label {
+    color: var(--input-placeholder-color);
+}
 
 /// DateCellEditor
 .p-calendar {
@@ -781,6 +905,12 @@ body {
         outline-offset: 0;
         box-shadow: var(--focus-box-shadow);
         border-radius: var(--editor-border-radius);
+    }
+
+    &.required-field {
+        .p-inputtext {
+            color: var(--table-required-color);
+        }
     }
 
     input {
@@ -839,6 +969,12 @@ body {
 .rc-editor-linked {
     &:focus-within {
         box-shadow: var(--focus-box-shadow);
+    }
+
+    &.required-field {
+        .p-inputtext {
+            color: var(--table-required-color);
+        }
     }
 
     input {
@@ -1111,83 +1247,127 @@ body {
     }
 
     .p-datatable-tbody > tr {
-        background: var(--table-row-odd-background);
+        background: var(--table-row-even-background);
         color: var(--text-color);
+
         > td {
             border: var(--table-row-border);
 
+            &.p-highlight {
+                color: var(--text-color);
+            }
+
             &.cell-required {
-                background: var(--table-required-odd-background);
+                background: var(--table-required-even-background);
                 color: var(--table-required-color);
             }
 
             &.cell-readonly {
-                background: var(--table-readonly-odd-background);
-            }
-
-            &.p-highlight {
-                color: var(--text-color);
-            }
-
-            &:hover {
-                color: var(--table-cell-hover-color);
+                background: var(--table-readonly-even-background);
             }
         }
 
         &.p-highlight {
-            background: var(--table-selected-row-background);
             color: var(--text-color);
+            background: var(--table-selected-row-background) !important;
 
-            td {
+            > td {
+                .open-cell-editor {
+                    box-shadow: none;
+                    color: var(--text-color);
+
+                    .p-inputtext:enabled:focus {
+                        box-shadow: none;
+                    }
+                }
+
+                &.cell-required {
+                    background: var(--table-required-even-background);
+                    opacity: 0.8;
+                }
+
+                &.cell-readonly {
+                    background: var(--table-readonly-even-background);
+                    opacity: 0.8;
+                }
+            }
+        }
+
+        &.p-row-odd {
+            background: var(--table-row-odd-background);
+
+            > td {
                 &.cell-required {
                     background: var(--table-required-odd-background);
-                    opacity: 0.8;
+                    color: var(--table-required-color);
                 }
 
                 &.cell-readonly {
                     background: var(--table-readonly-odd-background);
-                    opacity: 0.8;
                 }
             }
-        }
-
-        &:nth-child(even) {
-            background: var(--table-row-even-background);
 
             &.p-highlight {
-                background: var(--table-selected-row-background);
-                color: var(--text-color);
-            }
-
-            > td {
-                &.cell-required {
-                    background: var(--table-required-even-background);
-                }
-
-                &.cell-readonly {
-                    background: var(--table-readonly-even-background);
-                }
-            }
-
-            &.p-highlight > td {
-                &.cell-required {
-                    background: var(--table-required-even-background);
-                    opacity: 0.8;
-                }
-
-                &.cell-readonly {
-                    background: var(--table-readonly-even-background);
-                    opacity: 0.8;
+                td {
+                    &.cell-required {
+                        background: var(--table-required-odd-background);
+                        opacity: 0.8;
+                    }
+    
+                    &.cell-readonly {
+                        background: var(--table-readonly-odd-background);
+                        opacity: 0.8;
+                    }
                 }
             }
         }
     }
 
-    &.p-datatable-hoverable-rows .p-datatable-tbody > tr:not(.p-highlight):hover {
+    &.p-datatable-hoverable-rows .p-datatable-tbody > tr:not(.p-highlight):not(.p-datatable-emptymessage):hover {
         background: var(--table-row-hover-background);
         color: var(--text-color);
     }
 } 
+
+.p-datatable.p-datatable-selectable-cell .p-datatable-tbody > tr.p-selectable-row {
+    &.p-row-odd {
+        > td.p-selectable-cell:not(.p-highlight) {
+            &:hover {
+                background: initial;
+                color: var(--table-cell-hover-color);
+            }
+        
+            &.cell-required:hover {
+                background: var(--table-required-odd-background);
+                color: var(--table-cell-hover-color);
+            }
+
+            &.cell-readonly:hover {
+                background: var(--table-readonly-odd-background);
+                color: var(--table-cell-hover-color);
+                opacity: 0.8;
+            }
+        }
+    }
+
+    > td.p-selectable-cell:not(.p-highlight) {
+        &:hover {
+            background: initial;
+            color: var(--table-cell-hover-color);
+        }
+    
+        &.cell-required:hover {
+            background: var(--table-required-even-background);
+            color: var(--table-cell-hover-color);
+        }
+
+        &.cell-readonly:hover {
+            background: var(--table-readonly-even-background);
+            color: var(--table-cell-hover-color);
+            opacity: 0.8;
+        }
+    }
+}
 
 /// Toolbar
 .rc-toolbar {
@@ -1236,22 +1416,13 @@ body {
 }
 
 /// Dialogs
-.rc-popup {
+.rc-popup, .error-dialog {
     .p-dialog-header {
         background: var(--dialog-header-background);
         color: var(--dialog-header-text-color);
         border-top-left-radius: var(--dialog-border-radius);
         border-top-right-radius: var(--dialog-border-radius);
         border-bottom: var(--dialog-header-border);
-
-        .p-dialog-header-icon {
-            color: var(--text-color);
-
-            &:enabled:hover {
-                background: #e9ecef;
-                color: var(--dialog-icon-hover-color);
-            }
-        }
     }
 
     .p-dialog-content {
@@ -1262,11 +1433,61 @@ body {
     }
 }
 
+.error-dialog {
+    .p-dialog-header {
+        background: var(--message-error-header-background);
+        color: var(--message-error-header-color);
+
+        .p-dialog-header-icon {
+            &:focus {
+                box-shadow: none;
+            }
+
+            &:enabled {
+                color: var(--message-error-header-color);
+
+                &:hover {
+                    background: var(--message-error-header-close-hover);
+                    color: var(--message-error-header-color);
+                }
+            } 
+        }
+    }
+
+    .p-dialog-footer {
+        border-bottom-left-radius: var(--dialog-border-radius);
+        border-bottom-right-radius: var(--dialog-border-radius);
+        background: var(--dialog-content-background);
+        color: var(--text-color);
+    }
+
+    .p-listbox {
+        .p-listbox-list {
+            .p-listbox-item {
+                border: var(--table-row-border);
+
+                &:nth-child(odd) {
+                    background: var(--table-row-odd-background);
+                }
+
+                &:nth-child(even) {
+                    background: var(--table-row-even-background);
+                }
+
+                &.p-highlight {
+                    background: var(--table-selected-row-background);
+                }
+            }
+        }
+    }
+}
+
 /// Messages
 .rc-message-dialog {
     .p-dialog-header {
         border-top-left-radius: var(--dialog-border-radius);
         border-top-right-radius: var(--dialog-border-radius);
+        background: var(--dialog-header-background);
     }
 
     &.info .p-dialog-header {
@@ -1369,8 +1590,22 @@ body {
 }
 
 /// Error Dialog
-.rc-error-dialog {
-    background: var(--error-dialog-background);
+.rc-error-bar {
+    background: var(--error-bar-background);
+    color: var(--text-color);
+
+    &.app-gone {
+        background: var(--gone-background);
+    }
+}
+
+/// TagPanel
+.tagpanel {
+    color: #495057;
+
+    .rc-button.mouse-border {
+        color: #495057;
+    }
 }
 
 /// GroupPanel
@@ -1382,7 +1617,7 @@ body {
 .p-tabview .p-tabview-nav {
     background: var(--tab-navbar-background);
     color: var(--text-color);
-    border: var(--tab-navbar-border);
+    border-color: var(--tab-navbar-border-color);
     border-radius: var(--tab-border-radius);
     padding: 0 var(--tab-border-radius);
 
@@ -1411,8 +1646,13 @@ body {
     }
 }
 
-.tabview-button {
+.p-tabview-close {
     color: var(--tab-close-color);
+
+    &:hover {
+        font-weight: bold;
+        color: var(--tab-close-hover-color);
+    }
 }
 
 /// Tree
@@ -1422,19 +1662,58 @@ body {
     color: var(--text-color);
     border-radius: var(--table-border-radius);
 
-    .p-tree-container .p-treenode .p-treenode-content {
-        &.p-treenode-selectable:not(.p-highlight):hover {
-            background: var(--tree-item-hover-background);
-            color: var(--text-color);
+    .p-tree-container {
+        >.p-treenode {
+            &:nth-child(odd) {
+                background: var(--tree-background);
+            }
+    
+            &:nth-child(even) {
+                background: var(--tree-even-background);
+            }
         }
 
-        &.p-highlight {
-            background: var(--tree-selected-item-background);
-            color: var(--text-color);
-        }
+        .p-treenode {
+            .p-treenode-children {
+                & .p-treenode:nth-child(odd) {
+                    background: var(--tree-background);
+                }
+        
+                & .p-treenode:nth-child(even) {
+                    background: var(--tree-even-background);
+                }
+            }
+    
+            .p-treenode-content {
+                &.p-treenode-selectable:not(.p-highlight):hover {
+                    background: var(--tree-item-hover-background);
+                    color: var(--text-color);
+                }
+        
+                .p-tree-toggler {
+                    color: var(--text-color);
+        
+                    &:enabled {
+                        color: var(--text-color);
+        
+                        &:hover {
+                            color: var(--text-color);
+                            background: var(--tree-selected-item-background);
+                        }
+                    }
 
-        &:focus {
-            box-shadow: var(--focus-box-shadow);
+                    &:focus {
+                        box-shadow: none;
+                    }
+                }
+        
+                &.p-highlight {
+                    background: var(--tree-selected-item-background);
+                    color: var(--text-color);
+                }
+        
+
+            }
         }
     }
 }
@@ -1476,4 +1755,124 @@ body {
     90% {
         stroke: var(--loading-spinner-color-4);
     }
+}
+
+/// V2
+
+.mobile-launcher-menu {
+    .rc-frame-toolbar {
+        background: var(--launcher-toolbar-background);
+        border-top: 1px solid;
+        border-color: var(--launcher-toolbar-separator-color);
+    
+        .rc-button.mouse-border {
+            color: var(--launcher-toolbar-button-text-color);
+    
+            &:not(a):not(.p-disabled):not(.border-notpainted):hover {
+                background: var(--launcher-toolbar-button-hover-background);
+                border-color: var(--launcher-toolbar-button-hover-background);
+                color: var(--launcher-toolbar-button-hover-text-color);
+            }
+        }
+    }
+}
+
+.rc-frame {
+    box-shadow: var(--frame-shadow);
+    border-radius: var(--frame-border-radius);
+
+    .rc-frame-header {
+        background: var(--frame-header-background);
+        color: var(--frame-header-color);
+        border-bottom: var(--frame-header-border);
+    
+        .rc-frame-header-close-button {
+            color: var(--text-color);
+            background: transparent;
+            font-size: 12px;
+        
+            &:hover {
+                background: var(--frame-header-button-hover-background);
+                font-weight: bold;
+                color: var(--frame-header-button-hover-color);
+            }
+        }
+    }
+
+    .p-menubar {
+        background: var(--frame-menubar-background);
+
+        .p-menubar-root-list {
+            >.p-menuitem, >.p-menuitem.p-menuitem-active  {
+                > .p-menuitem-link:not(.p-disabled) {
+                    background: var(--frame-menubar-background);
+                    color: var(--frame-menubar-text-color);
+    
+                    .p-menuitem-text, .p-submenu-icon {
+                        color: var(--frame-menubar-text-color);
+                    }
+    
+                    &:hover {
+                        background: var(--frame-menubar-hover-background);
+                        color: var(--frame-menubar-text-color);
+                        .p-menuitem-text, .p-submenu-icon {
+                            color: var(--frame-menubar-text-color);
+                        }
+                    }
+                }
+    
+                > .p-submenu-list {
+                    background: var(--frame-menubar-submenu-background);
+    
+                    .p-menuitem .p-menuitem-link {
+                        background: var(--frame-menubar-submenu-background);
+    
+                        .p-menuitem-text, .p-menuitem-icon {
+                            color: var(--text-color);
+                        }
+    
+                        &:hover {
+                            background: var(--frame-menubar-item-hover-background);
+    
+                            .p-menuitem-text, .p-menuitem-icon {
+                                color: var(--frame-menubar-item-hover-text-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .rc-frame-toolbar {
+        background: var(--frame-toolbar-background);
+        border-top: 1px solid;
+        border-color: var(--frame-toolbar-separator-color);
+    
+        .rc-button.mouse-border {
+            color: var(--frame-toolbar-button-text-color);
+    
+            &:not(a):not(.p-disabled):not(.border-notpainted):hover {
+                background: var(--frame-toolbar-button-hover-background);
+                border-color: var(--frame-toolbar-button-hover-background);
+                color: var(--frame-toolbar-button-hover-text-color);
+            }
+        }
+    }
+
+    .rc-frame-menu {
+        border-width: 0 var(--frame-border-width) 0 var(--frame-border-width);
+    }
+
+    .rc-frame-content {
+        border-width: 0 var(--frame-border-width) var(--frame-border-width) var(--frame-border-width);
+    }
+
+    .rc-frame-content, .rc-frame-menu {
+        border-color: var(--frame-header-background);
+    }
+}
+
+.rc-signature-pad {
+    background: var(--signature-pad-background)
 }
