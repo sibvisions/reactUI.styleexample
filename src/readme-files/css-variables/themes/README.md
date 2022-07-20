@@ -34,8 +34,8 @@ std-profile-padding | The profile-menu's menubar padding to increase it's size
 std-profile-pic | The size of the profile-menu's picture size
 std-profile-separator-margin | The margin of the separator, which separates profile-menu and topbar buttons
 std-profile-submenu-width-small | The profile-menu's submenu list width, when the window is small (<= 960px width)
-std-topbar-buttons | The size of the topbar buttons
-std-topbar-buttons-small | The size of the topbar buttons, when the window is small (<= 960px width)
+topbar-buttons-size | The size of the topbar buttons
+topbar-buttons-size-small | The size of the topbar buttons, when the window is small (<= 960px width)
 std-fadeout-width | The width of the fadeout div (a div which makes menu-item texts seem like fading out when the menu is collapsed)
 std-fadeout-left | The left value of the absolute positioned fadeout-div
 std-menu-header-padding | The padding of a standard-menu's header item (defines the gap between header items)
