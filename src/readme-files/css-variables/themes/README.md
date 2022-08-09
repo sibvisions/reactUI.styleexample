@@ -23,6 +23,8 @@ login-form-field-margin | The margins between fields of the login mask
 Variable | Description
 --- | --- 
 std-header-height | The header/topbar height of the standard-menu
+std-screen-title-size | The font-size of the screen title
+std-screen-title-margin | The left margin to the collapse button
 std-menu-width | The menu (panelmenu) width of the standard-menu
 std-menu-collpased-width | The menu (panelmenu) width of the standard-menu when collapsed
 std-logo-width | The logo width of the standard-menu
