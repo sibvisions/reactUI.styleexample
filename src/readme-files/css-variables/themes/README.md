@@ -30,6 +30,7 @@ std-menu-collpased-width | The menu (panelmenu) width of the standard-menu when 
 std-logo-width | The logo width of the standard-menu
 std-logo-collapsed-width | The logo width of the standard-menu when collapsed
 std-logo-height | The logo height of the standard-menu
+std-profile-height | The profile-menu's height
 std-profile-width-small | The profile-menu's width when the window is small (<= 960px width)
 std-profile-padding | The profile-menu's menubar padding to increase it's size
 std-profile-pic | The size of the profile-menu's picture size
