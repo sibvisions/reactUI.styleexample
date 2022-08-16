@@ -34,7 +34,6 @@ std-profile-height | The profile-menu's height
 std-profile-width-small | The profile-menu's width when the window is small (<= 960px width)
 std-profile-padding | The profile-menu's menubar padding to increase it's size
 std-profile-pic | The size of the profile-menu's picture size
-std-profile-separator-margin | The margin of the separator, which separates profile-menu and topbar buttons
 std-profile-submenu-width-small | The profile-menu's submenu list width, when the window is small (<= 960px width)
 topbar-buttons-size | The size of the topbar buttons
 topbar-buttons-size-small | The size of the topbar buttons, when the window is small (<= 960px width)
