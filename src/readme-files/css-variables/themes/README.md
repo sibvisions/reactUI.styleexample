@@ -47,6 +47,7 @@ menuicon-size | The size of the menuicon (also for corporation menu)
 Variable | Description
 --- | --- 
 corp-header-height | The header/topbar height of the corporation-menu
+corp-screen-title-size | The font-size of the screen title
 corp-logo-width | The logo width of the corporation-menu
 corp-profile-height | The profile-menu's height of the corporation-menu
 corp-profile-width-small | The profile-menu's width when the window is small (<= 960px width)
