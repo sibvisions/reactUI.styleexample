@@ -2,10 +2,10 @@ import React, { useEffect } from 'react';
 import './App.css';
 //import './green-scheme.scss';
 //import'./basti_big.scss';
-import "reactUI/public/color-schemes/dark-scheme.css";
+import "reactUI/public/color-schemes/dark.css";
 import "reactUI/public/themes/basti.css";
 import "./themeXYZ.css"
-import { ReactUI, useAPI } from 'reactUI';
+import { ReactUI, useAPI } from '@sibvisions/reactui';
 
 function App() {
   const api = useAPI();

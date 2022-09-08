@@ -117,7 +117,7 @@ There are four basic color-schemes available. Some color-schemes change more col
   ## 2. Color-Schemes
 
   ### Example
-  As example/template file for color-schemes I've added the [Default-scheme](src/default-scheme.scss) of the reactUI to this project.
+  As example/template file for color-schemes I've added the [Default-scheme](src/default.scss) of the reactUI to this project.
 
   ### Available CSS-Variables
   To find a list of all pre-defined CSS-variables you are able to change for color-schemes, click [here](src/readme-files/css-variables/color-schemes).
