@@ -78,6 +78,7 @@ primary-color | The primary-color of the app, mainly used for buttons.
 Variable | Description
 --- | ---
 popupmenubutton-panel-background | The background-color for the popup panel when clicking the button
+ popupmenubutton-item-color | The text-color of an item
 popupmenubutton-item-hover-background | The background-color when hovering an item
 popupmenubutton-item-hover-text-color | The text-color when hovering an item
 
