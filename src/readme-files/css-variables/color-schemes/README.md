@@ -11,7 +11,6 @@ Variable | Description
 --- | --- 
 login-mask-background | The login masks lower part background-color
 login-logo-background | The login masks logo part background-color
-login-placeholder-color | The text-color of the login inputfield's placeholder
 login-shadow | The shadow of the login mask
 
 ## Text Variable
@@ -56,6 +55,14 @@ std-menu-activeitem-color | Text color of the active menuitem (screen is opened)
 std-menu-border | The border which separates the standard menu from topbar and screen
 std-menu-fadeout-background | The background of a div which makes it seem like the text of a menugroup or menuitems is fading out when the menu is collapsed
 
+## Scrollbar Variables
+Variable | Description
+--- | ---
+menu-scrollbar-background | The background of the scrollbar
+menu-scrollbar-color | The color of the scrollbar
+menu-scrollbar-hover-color | The color of the scrollbar when hovering
+corp-scrollbar-background | The background of the scrollbar (corporation menu)
+
 ## Corporation-Menu Variables
 Variable | Description
 --- | ---
@@ -78,7 +85,7 @@ primary-color | The primary-color of the app, mainly used for buttons.
 Variable | Description
 --- | ---
 popupmenubutton-panel-background | The background-color for the popup panel when clicking the button
- popupmenubutton-item-color | The text-color of an item
+popupmenubutton-item-color | The text-color of an item
 popupmenubutton-item-hover-background | The background-color when hovering an item
 popupmenubutton-item-hover-text-color | The text-color when hovering an item
 
@@ -86,14 +93,17 @@ popupmenubutton-item-hover-text-color | The text-color when hovering an item
 Variable | Description
 --- | ---
 input-background | The background-color of an input field
-input-border | The border of an input field
+input-border-width | The border width of an input field
+input-border-color | The border color of an input field
+input-border-hover-color | The border color of an input field when hovering
 input-placeholder-color | The text-color of an input fields placeholder
 
 ## Checkbox Variables
 Variable | Description
 --- | ---
-checkbox-background | The background-color of a unselected checkbox
-checkbox-border | The border of a unselected checkbox
+checkbox-background | The background-color of an unselected checkbox
+checkbox-border | The border of an unselected checkbox
+checkbox-border-hover-color | The border color of an unselected checkbox when hovering
 checkbox-selected-background | The background-color of a selected checkbox
 checkbox-selected-hover-background | The hover background-color of a selected checkbox
 checkbox-color | The text-color of a selected checkbox
@@ -101,8 +111,9 @@ checkbox-color | The text-color of a selected checkbox
 ## Radiobutton Variables
 Variable | Description
 --- | ---
-radiobutton-background | The background-color of a unselected radiobutton
-radiobutton-border | The border of a unselected radiobutton
+radiobutton-background | The background-color of an unselected radiobutton
+radiobutton-border | The border of an unselected radiobutton
+radiobutton-border-hover-color | The border color of an unselected radiobutton when hovering
 radiobutton-selected-outer-background | The outer ring background-color of a selected radiobutton
 radiobutton-selected-outer-hover-background | The outer ring hover background-color of a selected radiobutton
 radiobutton-inner-color | The inner color of a selected radiobutton
@@ -112,19 +123,25 @@ Variable | Description
 --- | ---
 toolbar-background | The background-color of a toolbar
 toolbar-border-color | The border color of a toolbar
+toolbar-color | The color of a toolbar
 toolbar-separator-color | The color of the separator between toolbars
 
 ## Table Variables
 Variable | Description
 --- | ---
+table-border | The border of the table
 table-header-background | The background-color of table header columns
-table-header-border | The border for table header columns
+table-header-border-color | The border color for table header columns
+table-header-border-width | The border width for table header columns
 table-header-hover-background | The background-color when hovering a table header
+table-header-color | The color for table header columns
+table-header-hover-color | The color for table header columns when hovering
 table-row-odd-background | The background-color of odd rows
 table-row-even-background | The background-color of even rows
 table-row-hover-background | The hover background-color of rows
 table-selected-row-background | The background-color of a selected row
-table-row-border | The bottom-border of table rows
+table-row-border-color | The border color of table rows
+table-row-border-width | The border width of table rows
 table-cell-hover-color | The text-color of the cell-content when hovering the cell
 table-required-odd-background | The background-color for required columns in odd rows
 table-required-even-background | The background-color for required columns in even rows
@@ -132,18 +149,22 @@ table-required-color | The text-color of required rows
 table-readonly-odd-background | The background-color for readonly columns in odd rows
 table-readonly-even-background | The background-color for readonly columns in even rows
 table-sort-color | The text-color for sort indicators
+table-text-color | The text color of the table
 
 ## LinkedCellEditor Variables
 Variable | Description
 --- | ---
 linked-panel-background | The background-color of the LinkedCellEditor's panel
+linked-item-color | The text color of an item
 linked-item-hover-background | The background-color of an item when hovering it
 linked-item-hover-text-color | The text-color of an item when hovering it
+linked-highlighted-color | The color when an item is highlighted
 
 ## DateCellEditor Variables
 Variable | Description
 --- | ---
 date-panel-background | The background-color of the DatePicker
+date-panel-color | The text-color of the DatePicker
 date-panel-header-border | The border which separates the year/month picker from the day picker
 date-panel-hover-color | The text-color of a day when hovering over it
 date-selected-background | The background-color of a selected day
@@ -154,14 +175,14 @@ Variable | Description
 dialog-header-background | The background-color of a dialogs header
 dialog-header-text-color | The text-color of a dialogs header
 dialog-header-border | The border which separates the header of a dialog from the content
-dialog-icon-hover-color | The hover text-color of the 'x' to close a dialog
+dialog-header-close-hover-background | The hover background-color of the closing 'x'
+dialog-header-close-hover-color | The hover text-color of the 'x' to close a dialog
 dialog-content-background | The background-color of a dialogs content
 
 ## Tabset Variables
 Variable | Description
 --- | ---
 tab-navbar-background | The background-color of the Tabset navigation-bar
-tab-navbar-border-color | The border-color of the Tabset navigation-bar
 tab-selected-color | The border- and text-color of a selected Tab
 tab-hover-background | The background-color when hovering a Tab
 tab-border-color | The bottom-border color of an unselected Tab
@@ -171,19 +192,27 @@ tab-close-hover-color | The hover color of the closing 'x
 ## Tree Variables
 Variable | Description
 --- | ---
-tree-background | The background-color of the Tree
-tree-border | The border of the Tree
-tree-item-hover-background | The background-color of a Tree-Item when hovering it
-tree-selected-item-background | The background-color of a selected Tree-Item
+tree-background | The background-color of the tree
+tree-border | The border of the tree
+tree-color | The text-color of the tree
+tree-item-hover-background | The background-color of a tree-item when hovering it
+tree-item-hover-color | The text-color of a tree-item when hovering it
+tree-selected-item-background | The background-color of a selected tree-item
+tree-selected-item-color | The text-color of a selected tree-item
+tree-odd-background | The background-color of odd tree-items
+tree-even-background | The background-color of even tree-items
 
 ## HTML-Editor Variables
 Variable | Description
 --- | ---
 html-toolbar-background | The background-color of a HTML-Editors toolbar
 html-toolbar-border | The border of a HTML-Editors toolbar
+html-toolbar-button-background | The button-color of a HTML-Editors toolbar
 html-toolbar-button-hover-background | The background-color of toolbar-buttons when hovering them
 html-picker-expanded-background | The background-color of picker panel elements (popupmenus)
+html-picker-item-color | The text-color of picker items (popupmenus)
 html-picker-item-hover-background | The background-color when hovering picker items (popupmenus)
+html-picker-item-hover-color | The text-color of picker items when hovering them (popupmenus)
 
 ## Message Variables
 Variable | Description
@@ -201,26 +230,24 @@ message-question-header-background | The header background-color of question mes
 message-question-header-close-hover | The background-color behind the 'x' to close the message when hovering it of question messages
 message-question-header-color | The header text-color question messages
 
-## Error-Dialog Variable
+## Error-Bar Variable
 Variable | Description
 --- | ---
-error-bar-background | The background-color of the error-dialog
+error-bar-background | The background-color of the error-bar
+error-bar-color | The text-color of the error-bar
+gone-background | The background-color of the gone-bar
+gone-color | The text-color of the gone-bar
 
 ## Loading-Screen Variables
 Variable | Description
 --- | ---
 loading-screen-left-background | The background-color for the left side of the loading-screen
 loading-screen-right-background | The background-color for the right side of the loading-screen
-loading-spinner-color-1 | The first spinner-color of the progress-spinner animation
-loading-spinner-color-2 | The second spinner-color of the progress-spinner animation
-loading-spinner-color-3 | The third spinner-color of the progress-spinner animation
-loading-spinner-color-4 | The forth spinner-color of the progress-spinner animation
 
 ## Focus Variables
 Variable | Description
 --- | ---
 focus-box-shadow | The box-shadow when focusing a component
-border-color-hover | The border color when hovering components
 
 ## TopBar Variable
 Variable | Description
@@ -234,6 +261,7 @@ Variable | Description
 --- | ---
 login-border-radius | The border-radius for the login mask
 button-border-radius | The border-radius for buttons
+checkbox-border-radius | The border-radius for checkboxes
 editor-border-radius | The border-radius for Editors/Inputs
 date-border-radius | The border-radius for the DatePicker Panel
 linked-border-radius | The border-radius for the LinkedCellEditor Panel
@@ -245,50 +273,45 @@ toolbar-border-radius | The border-radius for toolbars
 ## Loading Topbar Variables
 Variable | Description
 --- | ---
---topbar-colors | two color values which are displayed by topbar which is shown when the client is communicating with the server
+topbar-colors | two color values which are displayed by topbar which is shown when the client is communicating with the server
 
 ## System Color Variables (is only set when systemcolor is set on an comp background in VisionX)
 Variable | Description
 --- | ---
---mandatory-background | The background color of mandatory fields
---readonly-background | The background color of readonly fields
---invalid-background | The background color of invalid fields
-
-## Gone Variable
-Variable | Description
---- | ---
---gone-background | Error dialog background when the application receives gone status
+mandatory-background | The background color of mandatory fields
+readonly-background | The background color of readonly fields
+invalid-background | The background color of invalid fields
 
 ## V2 Variables
 
 ## Launcher Variables
 Variable | Description
 --- | ---
---launcher-toolbar-background | The launchers toolbar background color
---launcher-toolbar-separator-color | The launchers toolbar separator color
---launcher-toolbar-button-text-color | The launchers toolbar buttons text-color
---launcher-toolbar-button-hover-background | The launchers toolbar buttons background color when hovering
---launcher-toolbar-button-hover-text-color | The launchers toolbar buttons text color when hovering
+launcher-toolbar-background | The launchers toolbar background color
+launcher-toolbar-border | The launchers border
+launcher-toolbar-button-text-color | The launchers toolbar buttons text-color
+launcher-toolbar-button-hover-background | The launchers toolbar buttons background color when hovering
+launcher-toolbar-button-hover-text-color | The launchers toolbar buttons text color when hovering
 
 ## Frame Variables
 Variable | Description
 --- | ---
---frame-menubar-background | The frames menubar background color
---frame-menubar-hover-background | The frames menubar hover background color
---frame-menubar-text-color | The frames menubar text-color
---frame-menubar-submenu-background | The frames menubar submenu background color
---frame-menubar-item-hover-background | The frames menubar sub-items hover background color
---frame-menubar-item-hover-text-color | The frames menubar sub-items hover text-color
---frame-toolbar-background | The background color of the frames toolbar
---frame-toolbar-separator-color | The separator color of frames toolbars
---frame-toolbar-button-text-color | The text-color of buttons of the frames toolbar
---frame-toolbar-button-hover-background | The background color when hovering toolbar buttons in the frame
---frame-toolbar-button-hover-text-color | The text-color when hovering toolbar buttons in the frame
---frame-header-background | The background color for frame headers
---frame-header-color | The text-color for frame headers
---frame-header-border | The border for frame headers
---frame-header-button-hover-background | The hover background color of the frame close button
---frame-header-button-hover-color | The hover text color of the frame close button
---frame-border-radius | Border radius of the frame
---frame-shadow | Box shadow of the frame
---frame-border-width | The frames border-width on the sides
+frame-menubar-background | The frames menubar background color
+frame-menubar-hover-background | The frames menubar hover background color
+frame-menubar-text-color | The frames menubar text-color
+frame-menubar-submenu-background | The frames menubar submenu background color
+frame-menubar-item-hover-background | The frames menubar sub-items hover background color
+frame-menubar-item-hover-text-color | The frames menubar sub-items hover text-color
+frame-toolbar-background | The background color of the frames toolbar
+frame-toolbar-border | The border of the frames toolbar
+frame-toolbar-button-text-color | The text-color of buttons of the frames toolbar
+frame-toolbar-button-hover-background | The background color when hovering toolbar buttons in the frame
+frame-toolbar-button-hover-text-color | The text-color when hovering toolbar buttons in the frame
+frame-header-background | The background color for frame headers
+frame-header-color | The text-color for frame headers
+frame-header-border | The border for frame headers
+frame-header-button-hover-background | The hover background color of the frame close button
+frame-header-button-hover-color | The hover text color of the frame close button
+frame-border-radius | Border radius of the frame
+frame-shadow | Box shadow of the frame
+frame-border-width | The frames border-width on the sides
