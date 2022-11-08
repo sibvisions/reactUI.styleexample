@@ -139,8 +139,7 @@ table-row-odd-background | The background-color of odd rows
 table-row-even-background | The background-color of even rows
 table-row-hover-background | The hover background-color of rows
 table-selected-row-background | The background-color of a selected row
-table-row-border-color | The border color of table rows
-table-row-border-width | The border width of table rows
+table-row-border | The border of table rows
 table-cell-hover-color | The text-color of the cell-content when hovering the cell
 table-required-odd-background | The background-color for required columns in odd rows
 table-required-even-background | The background-color for required columns in even rows
