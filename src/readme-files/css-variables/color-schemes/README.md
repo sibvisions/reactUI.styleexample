@@ -131,8 +131,7 @@ Variable | Description
 --- | ---
 table-border | The border of the table
 table-header-background | The background-color of table header columns
-table-header-border-color | The border color for table header columns
-table-header-border-width | The border width for table header columns
+table-header-border | The border for table header columns
 table-header-hover-background | The background-color when hovering a table header
 table-header-color | The color for table header columns
 table-header-hover-color | The color for table header columns when hovering
