@@ -14,7 +14,7 @@ This example uses the reactUI as library to show the different possible styles.
 **In the newer Node version I had a problem where multiple `npm link` commands did not work. (node 16.x.x) for me 14.x.x worked fine**
 
 # Style Hirarchy
-[Here is some information](./src//readme-files//style-hirarchy/README.md) which will show you how the style hirarchy is set in ReactUI.
+[Here is some information](https://github.com/sibvisions/reactUI.styleexample/wiki/Style-Hirarchy) which will show you how the style hirarchy is set in ReactUI.
 
 # Getting Started
 Import the "ReactUI" Component from the reactUI library, in your main file (e.g. App.tsx) render the component and pass properties as you wish.
@@ -92,7 +92,7 @@ There are four basic color-schemes available. Some color-schemes change more col
   As example/template file for themes I've added the [Basti-Theme](src/basti.scss) of the reactUI to this project.
 
   ### Available CSS-Variables
-  To find a list of all pre-defined CSS-variables you are able to change for themes, click [here](src/readme-files/css-variables/themes)
+  To find a list of all pre-defined CSS-variables you are able to change for themes, click [here](https://github.com/sibvisions/reactUI.styleexample/wiki/Themes-CSS%E2%80%90Variables)
 
   ### Changing the Theme with application.css
   By changing the "application.css" file of the JVx-application it is also possible to change the styles of the reactUI client. You can either change the pre-defined CSS-variables mentioned earlier or via CSS selectors
@@ -120,7 +120,7 @@ There are four basic color-schemes available. Some color-schemes change more col
   As example/template file for color-schemes I've added the [Default-scheme](src/default.scss) of the reactUI to this project.
 
   ### Available CSS-Variables
-  To find a list of all pre-defined CSS-variables you are able to change for color-schemes, click [here](src/readme-files/css-variables/color-schemes).
+  To find a list of all pre-defined CSS-variables you are able to change for color-schemes, click [here](https://github.com/sibvisions/reactUI.styleexample/wiki/Color-Schemes-CSS%E2%80%90Variables).
 
   ### Changing the Color-Scheme with application.css
   By changing the "application.css" file of the JVx-application it is also possible to change the styles of the reactUI client. You can either change the pre-defined CSS-variables mentioned earlier or via CSS selectors
