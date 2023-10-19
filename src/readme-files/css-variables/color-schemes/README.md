@@ -146,6 +146,7 @@ table-required-even-background | The background-color for required columns in ev
 table-required-color | The text-color of required rows
 table-readonly-odd-background | The background-color for readonly columns in odd rows
 table-readonly-even-background | The background-color for readonly columns in even rows
+table-readonly-color | The text-color of readonly rows
 table-sort-color | The text-color for sort indicators
 table-text-color | The text color of the table
 
@@ -185,7 +186,7 @@ tab-selected-color | The border- and text-color of a selected Tab
 tab-hover-background | The background-color when hovering a Tab
 tab-border-color | The bottom-border color of an unselected Tab
 tab-close-color | The color of the closing 'x'
-tab-close-hover-color | The hover color of the closing 'x
+tab-close-hover-color | The hover color of the closing 'x'
 
 ## Tree Variables
 Variable | Description
@@ -251,6 +252,8 @@ focus-box-shadow | The box-shadow when focusing a component
 Variable | Description
 --- | ---
 topbar-colors | The colors of the topbar to indicate loading
+topbar-medium-interval-colors | The color of the topbar for medium response times. If there is no valid color set, the topbar color will choose its default color
+topbar-long-interval-colors | The color of the topbar for long response times. If there is no valid color set, the topbar color will choose its default color
 
 ## Border-Radius Variables
 It is also possible to change the border-radius of components
