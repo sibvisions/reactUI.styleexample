@@ -112,7 +112,7 @@ crash-stack-height: The height of the crash message stack
 ## Topbar (Progressbar) Variables
 Variable | Description
 --- | --- 
-topbar-position: The position of the topbar (progressbar) valid values are "top" and "bottom"
-topbar-medium-interval: The interval when a response roundtrip is considered medium. Not entering a valid number in ms will remove the interval completely (no color change)
-topbar-long-interval: The interval when a response roundtrip is considered long. Not entering a valid number in ms will remove the interval completely (no color change)
+topbar-position | The position of the topbar (progressbar) valid values are "top" and "bottom"
+topbar-medium-interval | The interval when a response roundtrip is considered medium. Not entering a valid number in ms will remove the interval completely (no color change)
+topbar-long-interval | The interval when a response roundtrip is considered long. Not entering a valid number in ms will remove the interval completely (no color change)
 
