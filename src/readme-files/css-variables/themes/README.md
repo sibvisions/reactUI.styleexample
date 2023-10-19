@@ -107,7 +107,7 @@ error-dialog-icon-size | The font-size of the error-dialog icon
 Variable | Description
 --- | --- 
 crash-message-size | The size of the crash message
-crash-stack-height: The height of the crash message stack
+crash-stack-height | The height of the crash message stack
 
 ## Topbar (Progressbar) Variables
 Variable | Description
