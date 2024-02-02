@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { FC, useEffect } from 'react';
 import './App.css';
 //import './green-scheme.scss';
 //import'./basti_big.scss';
@@ -7,7 +7,7 @@ import "reactUI/public/themes/basti.css";
 import "./themeXYZ.css"
 import { ReactUI, useAPI } from '@sibvisions/reactui';
 
-function App() {
+const App: FC<any> = () => {
   const api = useAPI();
 
   useEffect(() => {
@@ -18,5 +18,4 @@ function App() {
     <ReactUI colorScheme="dark" theme="basti" />
   );
 }
-
 export default App;
